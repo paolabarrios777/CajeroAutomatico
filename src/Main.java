@@ -27,7 +27,6 @@ public class Main {
                     }
                     break;
                 case 3:
-                    System.exit(0);
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "se equivoco al ingresar la opcion de menu");

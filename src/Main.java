@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        int saldo=1000;
+        float saldo=1000;
         int opcion = 0;
         float ingreso,retiro;
         while (opcion!=3) {
@@ -13,7 +13,7 @@ public class Main {
             switch (opcion) {
                 case 1:
                     ingreso = Float.parseFloat(JOptionPane.showInputDialog("por favor ingresar la cantidad que desea ingresar en la cuenta"));
-                    saldo = (int) (saldo + ingreso);
+                    saldo =  (saldo + ingreso);
                     JOptionPane.showMessageDialog(null, " dinero en la cuenta:" + saldo);
                     break;
                 case 2:
@@ -22,7 +22,7 @@ public class Main {
                     if (retiro > saldo) {
                         JOptionPane.showMessageDialog(null, "fondos insuficientes para realizar el retiro");
                     } else {
-                        saldo = (int) (saldo - retiro);
+                        saldo = (saldo - retiro);
                         JOptionPane.showMessageDialog(null, "dinero en la cuenta:" + saldo);
                     }
                     break;
